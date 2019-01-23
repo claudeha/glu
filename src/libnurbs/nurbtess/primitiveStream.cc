@@ -39,7 +39,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
-#include <GL/gl.h> 
+#include <GL/Regal.h> 
 
 #include "primitiveStream.h"
 

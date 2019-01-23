@@ -30,7 +30,7 @@
 
 #include "gluos.h"
 #include <math.h>
-#include <GL/gl.h>
+#include <GL/Regal.h>
 #include <GL/glu.h>
 #include "gluint.h"
 

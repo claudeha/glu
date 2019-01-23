@@ -74,7 +74,7 @@ if test "x$OSMESA" = "xyes"; then
 else
     GLU_REQUIRES="gl"
     PKG_CHECK_MODULES(GL, [gl], [], [
-          AC_CHECK_HEADER([GL/gl.h],
+          AC_CHECK_HEADER([GL/Regal.h],
                   [],
                   AC_MSG_ERROR([GL not found]))
           AC_CHECK_LIB([GL],
