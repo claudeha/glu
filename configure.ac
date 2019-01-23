@@ -71,17 +71,6 @@ if test "x$OSMESA" = "xyes"; then
                    [OSMESA_LIBS=-lOSMesa],
                    AC_MSG_ERROR([OSMesa required]))
           ])
-else
-    GLU_REQUIRES="gl"
-    PKG_CHECK_MODULES(GL, [gl], [], [
-          AC_CHECK_HEADER([GL/Regal.h],
-                  [],
-                  AC_MSG_ERROR([GL not found]))
-          AC_CHECK_LIB([GL],
-                   [glBegin],
-                   [GL_LIBS=-lGL],
-                   AC_MSG_ERROR([GL required]))
-          ])
 fi
 AC_SUBST([GLU_REQUIRES])
 
