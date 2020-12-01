@@ -21,12 +21,12 @@
 
 AC_PREREQ([2.60])
 AC_INIT([glu],
-        [9.0.0],
+        [9.0.1],
         [https://bugs.freedesktop.org/enter_bug.cgi?product=Mesa&component=GLU])
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CANONICAL_HOST
 
-AM_INIT_AUTOMAKE([dist-bzip2 foreign subdir-objects])
+AM_INIT_AUTOMAKE([dist-xz foreign subdir-objects])
 
 LT_PREREQ([2.2])
 LT_INIT
@@ -42,8 +42,11 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 AC_ARG_ENABLE(debug,
               AS_HELP_STRING([--enable-debug],
                 [Enable debugging information]),
-              [CFLAGS="$CFLAGS -g -O0 -DDEBUG"
-               CXXFLAGS="$CXXFLAGS -g -O0 -DDEBUG"],
+              [if test x$enableval = xyes; then
+               CFLAGS="$CFLAGS -g -O0 -DDEBUG"
+               CXXFLAGS="$CXXFLAGS -g -O0 -DDEBUG"; else
+               CFLAGS="$CFLAGS -DNDEBUG"
+               CXXFLAGS="$CXXFLAGS -DNDEBUG"; fi],
               [CFLAGS="$CFLAGS -DNDEBUG"
                CXXFLAGS="$CXXFLAGS -DNDEBUG"])
 
