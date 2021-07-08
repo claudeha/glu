@@ -73,7 +73,7 @@ AC_ARG_ENABLE(osmesa,
 dnl Get the pkg-config definitions for libglvnd/OSMesa/libGL.  We include a
 dnl fallback path for implementations that don't provide a .pc file
 AS_IF([test "x$LIBGLVND" = "xyes"], [
-    GLU_REQUIRES="libglvnd"
+    GLU_REQUIRES="opengl"
     PKG_CHECK_MODULES(LIBGLVND, [opengl], [], [
         AC_CHECK_HEADER([GL/gl.h],
                         [],
