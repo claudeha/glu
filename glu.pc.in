@@ -1,5 +1,4 @@
 prefix=@prefix@
-exec_prefix=${prefix}
 libdir=@libdir@
 includedir=@includedir@
 
@@ -8,5 +7,4 @@ Description: Mesa OpenGL Utility library
 Requires: @GLU_REQUIRES@
 Version: @VERSION@
 Libs: -L${libdir} -lGLU
-Libs.private: -lm
 Cflags: -I${includedir}
