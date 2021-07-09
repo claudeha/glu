@@ -34,4 +34,5 @@ pkgconf.generate(
   libglu,
   name : 'glu',
   description : 'Mesa OpenGL Utility Library',
+  requires: dep_gl
 )
