@@ -47,7 +47,7 @@
 #define min(a,b) ((a>b)? b:a)
 #endif
 
-#include <GL/gl.h>
+#include <GL/Regal.h>
 
 #include "glimports.h"
 #include "zlassert.h"

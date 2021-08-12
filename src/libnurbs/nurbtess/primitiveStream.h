@@ -31,7 +31,7 @@
 */
 
 /*we do not use the constans GL_... so that this file is independent of 
- *<GL/gl.h>
+ *<GL/Regal.h>
  */
 
 #ifndef _PRIMITIVE_STREAM_H

@@ -33,7 +33,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <GL/gl.h>
+#include <GL/Regal.h>
 #include <GL/glu.h>
 
 /* Make it not a power of two to avoid cache thrashing on the chip */

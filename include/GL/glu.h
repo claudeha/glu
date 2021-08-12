@@ -31,7 +31,7 @@
 #ifndef __glu_h__
 #define __glu_h__
 
-#include <GL/gl.h>
+#include <GL/Regal.h>
 
 #ifndef GLAPIENTRY
 #if defined(_MSC_VER) || defined(__MINGW32__)

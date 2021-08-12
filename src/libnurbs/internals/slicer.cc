@@ -59,7 +59,7 @@
 /*USE_OPTTT is initiated in trimvertex.h*/
 
 #ifdef USE_OPTTT
-	#include <GL/gl.h>
+	#include <GL/Regal.h>
 #endif
 
 //#define USE_READ_FLAG //whether to use new or old tesselator

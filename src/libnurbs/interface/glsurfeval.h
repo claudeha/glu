@@ -38,7 +38,7 @@
 
 #include "basicsurfeval.h"
 #include "bezierPatchMesh.h" //in case output triangles
-#include <GL/gl.h>
+#include <GL/Regal.h>
 #include <GL/glu.h>
 
 class SurfaceMap;

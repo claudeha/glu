@@ -75,7 +75,7 @@ dnl fallback path for implementations that don't provide a .pc file
 AS_IF([test "x$LIBGLVND" = "xyes"], [
     GLU_REQUIRES="opengl"
     PKG_CHECK_MODULES(LIBGLVND, [opengl], [], [
-        AC_CHECK_HEADER([GL/gl.h],
+        AC_CHECK_HEADER([GL/Regal.h],
                         [],
                         AC_MSG_ERROR([libglvnd GL not found]))
         AC_CHECK_LIB([OpenGL],
@@ -94,7 +94,7 @@ AS_IF([test "x$LIBGLVND" = "xyes"], [
 ], [
     GLU_REQUIRES="gl"
     PKG_CHECK_MODULES(GL, [gl], [], [
-        AC_CHECK_HEADER([GL/gl.h],
+        AC_CHECK_HEADER([GL/Regal.h],
                         [],
                         AC_MSG_ERROR([GL not found]))
         AC_CHECK_LIB([GL],

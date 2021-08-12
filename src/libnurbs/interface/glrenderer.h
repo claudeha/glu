@@ -36,7 +36,7 @@
 #ifndef __gluglrenderer_h_
 #define __gluglrenderer_h_
 
-#include <GL/gl.h>
+#include <GL/Regal.h>
 #include <GL/glu.h>
 #include "nurbstess.h"
 #include "glsurfeval.h"

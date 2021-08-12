@@ -40,7 +40,7 @@
 #include <stdio.h>
 #include "glimports.h"
 #include "zlassert.h"
-#include <GL/gl.h>
+#include <GL/Regal.h>
 
 #include "rectBlock.h"
 

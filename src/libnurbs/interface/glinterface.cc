@@ -36,7 +36,7 @@
 */
 
 #include "gluos.h"
-#include <GL/gl.h>
+#include <GL/Regal.h>
 #include <GL/glu.h>
 #include <stdio.h>
 #include "glimports.h"
